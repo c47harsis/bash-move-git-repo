@@ -1,5 +1,7 @@
 ### Bash script for moving git repo from one origin to another.
 
+Run `./script.sh --help` for help.
+
 Sometimes there is a need to move one git repository to new origin. It can be done by several commands in fact, like that:
 ```
 git clone --bare <repo>
