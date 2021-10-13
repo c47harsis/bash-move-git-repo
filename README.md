@@ -20,7 +20,7 @@ The script choses the name of new directory from new repository URL (just a name
 
 **Important:** It has no ability to login to VCS, so you have to have credentials for them already.
 
-Examples of usage:
+Example:
 ```
 ./script.sh https://github.com/c47harsis/codenjoy-chess.git https://github.com/c47harsis/new-repo.git --clean --ssl-off
 ```
