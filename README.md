@@ -2,7 +2,7 @@
 
 Run `./script.sh --help` for help.
 
-Sometimes there is a need to move one git repository to new origin. It can be done by several commands in fact, like that:
+Sometimes there is need to move one git repository to a new origin. It can be done by several commands in fact, like that:
 ```
 git clone --bare <repo>
 cd <repo folder>
@@ -10,7 +10,7 @@ git remote rm origin
 git remote add <new origin>
 git push --mirror <new origin>
 ```
-That's exaclty what the script is doing, but with several options for configuration, such as:
+And that is exaclty what the script is doing, but with several options for configuration, such as:
 
 1. Disable SSL by `--ssl-off` option. That disables SSL verifying globally during execution of the script by simply `git config --global http.sslVerify false`. If there is an **error or execution is interrupted by user**, or the execution **completes succesfully**, the SSL verification flag **will be set to value before the execution** (if the flag was disabled, it stays disabled, otherwise it will be enabled back).
 2. Remove created directory with repo by `--clean` option. That means that after the execution the directory, which has been created for cloned repo, **will be removed**. The directory **will be removed** also in case of **error or interruption by user**, no matter is the option set or not.
